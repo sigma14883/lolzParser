@@ -18,7 +18,7 @@ async def start_monitor(chat_id):
                 for it in new_items:
                     await save_listing(it)
                     known.add(it['id'])
-                # сортируем новые по цене
+                # сорт по цене
                 new_items.sort(key=lambda x: x['price'])
                 reply = 'новые лимитные подарки:\n'
                 for it in new_items:
